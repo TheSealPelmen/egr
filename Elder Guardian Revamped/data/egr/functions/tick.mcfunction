@@ -3,11 +3,15 @@ execute as @e[type=elder_guardian,tag=Elder_Guardian_Active] at @s run function 
 execute as @e[type=elder_guardian,tag=Elder_Guardian_Active] at @s run function egr:attacks/shard_rain/shard_rain
 execute as @e[tag=guardian_attack] if entity @s run function egr:entities/guardian_attacks
 execute as @e[type=elder_guardian,tag=Elder_Guardian_Active,tag=!Elder_Intro] at @s run function egr:other/intro
+# Kill naturally spawned elder guardians for better compatability
+execute as @e[type=elder_guardian,tag=!DatapackSpawned] at @s run summon elder_guardian ~ ~ ~ {Tags:["DatapackSpawned"]}
+execute as @e[type=elder_guardian,tag=!DatapackSpawned] at @s run tp @s ~ -50000 ~
+execute as @e[type=elder_guardian,tag=!DatapackSpawned] at @s run kill @s
 # First, store the current health as a score
 execute as @e[type=elder_guardian] store result score @s elder_guardian_health run data get entity @s Health
 execute as @e[type=elder_guardian,tag=!maxhealthengaged] run scoreboard players add @s max_health_check 1
-execute as @e[type=elder_guardian,tag=!maxhealthengaged] run data modify entity @s ActiveEffects set value [{Id:6,Duration:10,Amplifier:254}]
-execute as @e[type=elder_guardian,tag=!maxhealthengaged,scores={max_health_check = 10..}] store result score @s egr_health_max run data get entity @s Health
+#execute as @e[type=elder_guardian,tag=!maxhealthengaged] run data modify entity @s ActiveEffects set value [{Id:6,Duration:10,Amplifier:254}]
+execute as @e[type=elder_guardian,tag=!maxhealthengaged,scores={max_health_check = ..10}] store result score @s egr_health_max run data get entity @s Health
 execute as @e[type=elder_guardian,tag=!maxhealthengaged,scores={max_health_check = 10..}] run tag @s add maxhealthengaged
 execute as @e[type=elder_guardian,scores={max_health_check = 10..}] run scoreboard players reset @s max_health_check
 execute as @e[type=elder_guardian,tag=maxhealthengaged] run scoreboard players operation @s egr_percentage = score_holder egr_health_percentage_const
@@ -34,6 +38,7 @@ execute as @e[tag=egr_phase_second] at @s run scoreboard players add @s egr_seco
 execute as @e[scores={egr_second_phase_particle_cosmetic = 15}] at @s run particle dripping_obsidian_tear ~ ~ ~ 1 1 1 1 1 normal @a
 execute as @e[scores={egr_second_phase_particle_cosmetic = 15}] at @s run particle dripping_lava ~ ~ ~ 1 1 1 1 1 normal @a
 execute as @e[scores={egr_second_phase_particle_cosmetic = 15}] run scoreboard players set @s egr_second_phase_particle_cosmetic 0
+# Projectile Protection
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity @s ArmorItems[3] set value {id:"minecraft:prismarine",Count:1b,tag:{Enchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}}
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity @s ArmorItems[2] set value {id:"minecraft:prismarine",Count:1b,tag:{Enchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}}
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity @s ArmorItems[1] set value {id:"minecraft:prismarine",Count:1b,tag:{Enchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}}
