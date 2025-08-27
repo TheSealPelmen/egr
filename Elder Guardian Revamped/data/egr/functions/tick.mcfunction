@@ -9,7 +9,7 @@ execute as @e[type=elder_guardian] store result score @s egr_health_max run data
 
 # Calculate percentage: (current * 100) / 80 (vanilla max health)
 execute as @e[type=elder_guardian] run scoreboard players operation @s egr_percentage = @s elder_guardian_health
-execute as @e[type=elder_guardian] run scoreboard players operation @s egr_percentage *= 100 const
+execute as @e[type=elder_guardian] run scoreboard players operation @s egr_percentage *= score_holder const
 execute as @e[type=elder_guardian] run scoreboard players operation @s egr_percentage /= @s egr_health_max
 
 # Now use percentage-based checks (99% = below full health, 50% = half health)
@@ -35,5 +35,6 @@ execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity @s ArmorItems[2] set value {id:"minecraft:prismarine",Count:1b,tag:{Enchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}}
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity @s ArmorItems[1] set value {id:"minecraft:prismarine",Count:1b,tag:{Enchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}}
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity @s ArmorItems[0] set value {id:"minecraft:prismarine",Count:1b,tag:{Enchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}}
-
+execute as @e[tag=!egr_data_modified,type=elder_guardian] run data merge entity @s {ArmorDropChances:[0.0F,0.0F,0.0F,0.0F]}
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run tag @s add egr_data_modified
+
