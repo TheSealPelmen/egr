@@ -1,0 +1,94 @@
+execute as @s[scores={rain_shard= 1}] run scoreboard players set @s egr_attack3_cd 0
+execute as @s[scores={rain_shard= 1},tag=egr_phase_second] run scoreboard players set @s egr_attack3_cd 200
+execute as @s[scores={rain_shard = 15},tag=egr_phase_second] run playsound entity.puffer_fish.blow_up neutral @a ~ ~ ~ 10 1 0
+execute as @s[scores={rain_shard = 15},tag=egr_phase_second] run summon item ~ ~9 ~2.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 15},tag=egr_phase_second] run summon item ~ ~9 ~-2.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 15},tag=egr_phase_second] run summon item ~2.25 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 15},tag=egr_phase_second] run summon item ~-2.25 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 15},tag=egr_phase_second] run summon item ~2.25 ~9 ~-2.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 15},tag=egr_phase_second] run summon item ~2.25 ~9 ~2.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 15},tag=egr_phase_second] run summon item ~-2.25 ~9 ~-2.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 15},tag=egr_phase_second] run summon item ~-2.25 ~9 ~2.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 20}] run playsound entity.puffer_fish.blow_up neutral @a ~ ~ ~ 10 1 0
+execute as @s[scores={rain_shard = 20}] run summon item ~ ~9 ~3 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 20}] run summon item ~ ~9 ~-3 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 20}] run summon item ~3 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 20}] run summon item ~-3 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 20}] run summon item ~3 ~9 ~-3 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 20}] run summon item ~3 ~9 ~3 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 20}] run summon item ~-3 ~9 ~-3 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 20}] run summon item ~-3 ~9 ~3 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 25},tag=egr_phase_second] run playsound entity.puffer_fish.blow_up neutral @a ~ ~ ~ 10 1 0
+execute as @s[scores={rain_shard = 25},tag=egr_phase_second] run summon item ~ ~9 ~3.75 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 25},tag=egr_phase_second] run summon item ~ ~9 ~-3.75 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 25},tag=egr_phase_second] run summon item ~3.75 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 25},tag=egr_phase_second] run summon item ~-3.75 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 25},tag=egr_phase_second] run summon item ~3.75 ~9 ~-3.75 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 25},tag=egr_phase_second] run summon item ~3.75 ~9 ~3.75 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 25},tag=egr_phase_second] run summon item ~-3.75 ~9 ~-3.75 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 25},tag=egr_phase_second] run summon item ~-3.75 ~9 ~3.75 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 30}] run playsound entity.puffer_fish.blow_up neutral @a ~ ~ ~ 10 1 0
+execute as @s[scores={rain_shard = 30}] run summon item ~ ~9 ~4.5 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 30}] run summon item ~ ~9 ~-4.5 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 30}] run summon item ~4.5 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 30}] run summon item ~-4.5 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 30}] run summon item ~4.5 ~9 ~-4.5 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 30}] run summon item ~4.5 ~9 ~4.5 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 30}] run summon item ~-4.5 ~9 ~-4.5 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 30}] run summon item ~-4.5 ~9 ~4.5 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 35},tag=egr_phase_second] run playsound entity.puffer_fish.blow_up neutral @a ~ ~ ~ 10 1 0
+execute as @s[scores={rain_shard = 35},tag=egr_phase_second] run summon item ~ ~9 ~5.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 35},tag=egr_phase_second] run summon item ~ ~9 ~-5.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 35},tag=egr_phase_second] run summon item ~5.25 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 35},tag=egr_phase_second] run summon item ~-5.25 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 35},tag=egr_phase_second] run summon item ~5.25 ~9 ~-5.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 35},tag=egr_phase_second] run summon item ~5.25 ~9 ~5.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 35},tag=egr_phase_second] run summon item ~-5.25 ~9 ~-5.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 35},tag=egr_phase_second] run summon item ~-5.25 ~9 ~5.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 40}] run playsound entity.puffer_fish.blow_up neutral @a ~ ~ ~ 10 1 0
+execute as @s[scores={rain_shard = 40}] run summon item ~ ~12 ~6 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 40}] run summon item ~ ~12 ~-6 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 40}] run summon item ~6 ~12 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 40}] run summon item ~-6 ~12 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 40}] run summon item ~6 ~12 ~-6 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 40}] run summon item ~6 ~12 ~6 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 40}] run summon item ~-6 ~12 ~-6 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 40}] run summon item ~-6 ~12 ~6 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 45},tag=egr_phase_second] run playsound entity.puffer_fish.blow_up neutral @a ~ ~ ~ 10 1 0
+execute as @s[scores={rain_shard = 45},tag=egr_phase_second] run summon item ~ ~9 ~6.75 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 45},tag=egr_phase_second] run summon item ~ ~9 ~-6.75 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 45},tag=egr_phase_second] run summon item ~6.75 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 45},tag=egr_phase_second] run summon item ~-6.75 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 45},tag=egr_phase_second] run summon item ~6.75 ~9 ~-6.75 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 45},tag=egr_phase_second] run summon item ~6.75 ~9 ~6.75 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 45},tag=egr_phase_second] run summon item ~-6.75 ~9 ~-6.75 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 45},tag=egr_phase_second] run summon item ~-6.75 ~9 ~6.75 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 50}] run playsound entity.puffer_fish.blow_up neutral @a ~ ~ ~ 10 1 0
+execute as @s[scores={rain_shard = 50}] run summon item ~ ~12 ~7.5 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 50}] run summon item ~ ~12 ~-7.5 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 50}] run summon item ~7.5 ~12 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 50}] run summon item ~-7.5 ~12 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 50}] run summon item ~7.5 ~12 ~-7.5 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 50}] run summon item ~7.5 ~12 ~7.5 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 50}] run summon item ~-7.5 ~12 ~-7.5 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 50}] run summon item ~-7.5 ~12 ~7.5 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 55},tag=egr_phase_second] run playsound entity.puffer_fish.blow_up neutral @a ~ ~ ~ 10 1 0
+execute as @s[scores={rain_shard = 55},tag=egr_phase_second] run summon item ~ ~9 ~8.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 55},tag=egr_phase_second] run summon item ~ ~9 ~-8.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 55},tag=egr_phase_second] run summon item ~8.25 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 55},tag=egr_phase_second] run summon item ~-8.25 ~9 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 55},tag=egr_phase_second] run summon item ~8.25 ~9 ~-8.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 55},tag=egr_phase_second] run summon item ~8.25 ~9 ~8.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 55},tag=egr_phase_second] run summon item ~-8.25 ~9 ~-8.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 55},tag=egr_phase_second] run summon item ~-8.25 ~9 ~8.25 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 60}] run playsound entity.puffer_fish.blow_up neutral @a ~ ~ ~ 10 1 0
+execute as @s[scores={rain_shard = 60}] run summon item ~ ~16 ~9 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 60}] run summon item ~ ~16 ~-9 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 60}] run summon item ~9 ~16 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 60}] run summon item ~-9 ~16 ~ {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 60}] run summon item ~9 ~16 ~-9 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 60}] run summon item ~9 ~16 ~9 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 60}] run summon item ~-9 ~16 ~-9 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 60}] run summon item ~-9 ~16 ~9 {Tags:["Shard","guardian_attack"],NoGravity:1b,Health:10000,PickupDelay:32767,Item:{id:"minecraft:prismarine_shard",Count:1b},Glowing:1b}
+execute as @s[scores={rain_shard = 60..}] run tag @s remove shard_rain_progress
+execute as @s[scores={rain_shard = 60..}] run scoreboard players set @s rain_shard 0
