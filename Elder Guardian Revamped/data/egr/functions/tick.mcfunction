@@ -5,6 +5,7 @@ execute as @e[tag=guardian_attack] if entity @s run function egr:entities/guardi
 execute as @e[type=elder_guardian,tag=Elder_Guardian_Active,tag=!Elder_Intro] at @s run function egr:other/intro
 # First, store the current health as a score
 execute as @e[type=elder_guardian] store result score @s elder_guardian_health run data get entity @s Health
+execute as @e[type=elder_guardian] store result score @s egr_health_max run data get entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base
 
 # Calculate percentage: (current * 100) / 80 (vanilla max health)
 execute as @e[type=elder_guardian] run scoreboard players operation @s egr_percentage = @s elder_guardian_health
@@ -34,4 +35,5 @@ execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity @s ArmorItems[2] set value {id:"minecraft:prismarine",Count:1b,tag:{Enchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}}
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity @s ArmorItems[1] set value {id:"minecraft:prismarine",Count:1b,tag:{Enchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}}
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity @s ArmorItems[0] set value {id:"minecraft:prismarine",Count:1b,tag:{Enchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}}
+
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run tag @s add egr_data_modified
