@@ -3,10 +3,6 @@ execute as @e[type=elder_guardian,tag=Elder_Guardian_Active] at @s run function 
 execute as @e[type=elder_guardian,tag=Elder_Guardian_Active] at @s run function egr:attacks/shard_rain/shard_rain
 execute as @e[tag=guardian_attack] if entity @s run function egr:entities/guardian_attacks
 execute as @e[type=elder_guardian,tag=Elder_Guardian_Active,tag=!Elder_Intro] at @s run function egr:other/intro
-# Kill naturally spawned elder guardians for better compatability
-execute as @e[type=elder_guardian,tag=!DatapackSpawned] at @s run summon elder_guardian ~ ~ ~ {Tags:["DatapackSpawned"]}
-execute as @e[type=elder_guardian,tag=!DatapackSpawned] at @s run tp @s ~ -50000 ~
-execute as @e[type=elder_guardian,tag=!DatapackSpawned] at @s run kill @s
 # First, store the current health as a score
 execute as @e[type=elder_guardian] store result score @s elder_guardian_health run data get entity @s Health
 execute as @e[type=elder_guardian,tag=!maxhealthengaged] run scoreboard players add @s max_health_check 1
@@ -45,3 +41,4 @@ execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run data modify entity @s ArmorItems[0] set value {id:"minecraft:prismarine",Count:1b,tag:{Enchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}}
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run data merge entity @s {ArmorDropChances:[0.0F,0.0F,0.0F,0.0F]}
 execute as @e[tag=!egr_data_modified,type=elder_guardian] run tag @s add egr_data_modified
+
